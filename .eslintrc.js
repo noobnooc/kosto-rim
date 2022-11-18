@@ -21,7 +21,7 @@ module.exports = {
   rules: {},
   overrides: [
     {
-      files: ["**/*.{ts,tsx}"],
+      files: ["src/**/*.{ts,tsx}"],
     },
   ],
 };
