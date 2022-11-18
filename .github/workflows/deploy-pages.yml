@@ -15,22 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Cache node modules
-        uses: actions/cache@v3
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: ~/.yarn/cache
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-
       - name: Install Dependencies
-        env:
-          YARN_CACHE_FOLDER: ~/.yarn/cache
-        run: yarn set version berry && yarn
+        run: yarn set version berry && yarn --immutable
 
       - name: Lint
         run: yarn lint
