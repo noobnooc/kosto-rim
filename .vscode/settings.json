@@ -1,11 +1,5 @@
 {
-  "cSpell.words": [
-    "noob",
-    "noobnooc",
-    "nooc",
-    "svgr",
-    "vite"
-  ],
+  "cSpell.words": ["noob", "noobnooc", "nooc", "svgr", "vite"],
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.formatOnSave": true,
@@ -13,9 +7,7 @@
     "source.fixAll.eslint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
