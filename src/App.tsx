@@ -1,14 +1,14 @@
 import React, { FC } from "react";
-import { Announcement } from "./Announcement";
-import { Footer } from "./Footer";
-import { Home } from "./Home";
+import { Announcement } from "./views/Announcement";
+import { Footer } from "./views/Footer";
+import { Home } from "./views/Home";
 
 export const App: FC = () => {
   return (
     <div className="">
       <Home />
-      <Footer />
 
+      <Footer />
       <Announcement />
     </div>
   );

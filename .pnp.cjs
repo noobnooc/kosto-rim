@@ -28,6 +28,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@heroicons/react", "virtual:43407b4efcfe70e9aaf2d3debfa0c8fe3eb814854f9735290ea865f2053fe5e07e3499304fbb7eaef1552f2359bde62b5875112886337ff3ee1342eb1495b528#npm:2.0.13"],\
+            ["@icons-pack/react-simple-icons", "virtual:43407b4efcfe70e9aaf2d3debfa0c8fe3eb814854f9735290ea865f2053fe5e07e3499304fbb7eaef1552f2359bde62b5875112886337ff3ee1342eb1495b528#npm:6.1.0"],\
             ["@types/react", "npm:18.0.25"],\
             ["@types/react-dom", "npm:18.0.9"],\
             ["@typescript-eslint/eslint-plugin", "virtual:43407b4efcfe70e9aaf2d3debfa0c8fe3eb814854f9735290ea865f2053fe5e07e3499304fbb7eaef1552f2359bde62b5875112886337ff3ee1342eb1495b528#npm:5.43.0"],\
@@ -507,6 +509,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@heroicons/react", [\
+        ["npm:2.0.13", {\
+          "packageLocation": "./.yarn/cache/@heroicons-react-npm-2.0.13-35b19f9179-f03c393a12.zip/node_modules/@heroicons/react/",\
+          "packageDependencies": [\
+            ["@heroicons/react", "npm:2.0.13"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:43407b4efcfe70e9aaf2d3debfa0c8fe3eb814854f9735290ea865f2053fe5e07e3499304fbb7eaef1552f2359bde62b5875112886337ff3ee1342eb1495b528#npm:2.0.13", {\
+          "packageLocation": "./.yarn/__virtual__/@heroicons-react-virtual-234c29970f/0/cache/@heroicons-react-npm-2.0.13-35b19f9179-f03c393a12.zip/node_modules/@heroicons/react/",\
+          "packageDependencies": [\
+            ["@heroicons/react", "virtual:43407b4efcfe70e9aaf2d3debfa0c8fe3eb814854f9735290ea865f2053fe5e07e3499304fbb7eaef1552f2359bde62b5875112886337ff3ee1342eb1495b528#npm:2.0.13"],\
+            ["@types/react", "npm:18.0.25"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@humanwhocodes/config-array", [\
         ["npm:0.11.7", {\
           "packageLocation": "./.yarn/cache/@humanwhocodes-config-array-npm-0.11.7-fa83ecd27f-cf506dc45d.zip/node_modules/@humanwhocodes/config-array/",\
@@ -533,6 +557,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@humanwhocodes-object-schema-npm-1.2.1-eb622b5d0e-a824a1ec31.zip/node_modules/@humanwhocodes/object-schema/",\
           "packageDependencies": [\
             ["@humanwhocodes/object-schema", "npm:1.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@icons-pack/react-simple-icons", [\
+        ["npm:6.1.0", {\
+          "packageLocation": "./.yarn/cache/@icons-pack-react-simple-icons-npm-6.1.0-01e848549b-1c9f0137d6.zip/node_modules/@icons-pack/react-simple-icons/",\
+          "packageDependencies": [\
+            ["@icons-pack/react-simple-icons", "npm:6.1.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:43407b4efcfe70e9aaf2d3debfa0c8fe3eb814854f9735290ea865f2053fe5e07e3499304fbb7eaef1552f2359bde62b5875112886337ff3ee1342eb1495b528#npm:6.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/@icons-pack-react-simple-icons-virtual-8592920e7f/0/cache/@icons-pack-react-simple-icons-npm-6.1.0-01e848549b-1c9f0137d6.zip/node_modules/@icons-pack/react-simple-icons/",\
+          "packageDependencies": [\
+            ["@icons-pack/react-simple-icons", "virtual:43407b4efcfe70e9aaf2d3debfa0c8fe3eb814854f9735290ea865f2053fe5e07e3499304fbb7eaef1552f2359bde62b5875112886337ff3ee1342eb1495b528#npm:6.1.0"],\
+            ["@types/react", "npm:18.0.25"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3343,6 +3389,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["kosto-rim", "workspace:."],\
+            ["@heroicons/react", "virtual:43407b4efcfe70e9aaf2d3debfa0c8fe3eb814854f9735290ea865f2053fe5e07e3499304fbb7eaef1552f2359bde62b5875112886337ff3ee1342eb1495b528#npm:2.0.13"],\
+            ["@icons-pack/react-simple-icons", "virtual:43407b4efcfe70e9aaf2d3debfa0c8fe3eb814854f9735290ea865f2053fe5e07e3499304fbb7eaef1552f2359bde62b5875112886337ff3ee1342eb1495b528#npm:6.1.0"],\
             ["@types/react", "npm:18.0.25"],\
             ["@types/react-dom", "npm:18.0.9"],\
             ["@typescript-eslint/eslint-plugin", "virtual:43407b4efcfe70e9aaf2d3debfa0c8fe3eb814854f9735290ea865f2053fe5e07e3499304fbb7eaef1552f2359bde62b5875112886337ff3ee1342eb1495b528#npm:5.43.0"],\
