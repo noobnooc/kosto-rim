@@ -1,13 +1,13 @@
 import React, { FC } from "react";
 import Banner from "./Banner";
 import { FAQ } from "./FAQ";
-import { Section1 } from "./Section1";
+import { SectionFeatures } from "./SectionFeatures";
 
 export const Home: FC = () => {
   return (
     <div className="">
       <Banner />
-      <Section1 />
+      <SectionFeatures />
       <FAQ />
     </div>
   );

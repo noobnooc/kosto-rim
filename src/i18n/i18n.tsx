@@ -62,12 +62,12 @@ export function I18NProvider({ children }: { children: ReactNode }) {
 export function useI18N() {
   const lang = useContext(I18NContext);
 
-  const strings = useMemo(() => {
+  const content = useMemo(() => {
     return LANGUAGES.find((l) => l.language === lang.language)?.content;
   }, [lang.language]);
 
   return {
-    strings,
+    content,
     lang,
   };
 }

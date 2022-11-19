@@ -17,7 +17,7 @@ export const Announcement: FC = () => {
     <div className="fixed inset-x-0 bottom-0">
       <div className="relative bg-indigo-500 px-4 py-2 pr-14 text-white">
         <p className="text-left text-sm font-medium sm:text-center">
-          {i18n.strings?.announcement}
+          {i18n.content?.announcement}
         </p>
 
         <button
