@@ -1,4 +1,10 @@
-import { ArrowRightIcon, RectangleGroupIcon } from "@heroicons/react/24/solid";
+import {
+  ArrowRightIcon,
+  LockClosedIcon,
+  NewspaperIcon,
+  SwatchIcon,
+  TagIcon,
+} from "@heroicons/react/24/solid";
 import { Apple } from "@icons-pack/react-simple-icons";
 import React from "react";
 
@@ -19,43 +25,47 @@ export const en = {
   banner: {
     title: "Just Another Accounting App",
     summary:
-      "I know there are countless account apps out there, but why not give me a try?",
+      "We are not target on that to make a fully armed accounting app. We just want to craft a simple app what ourself needed, and maybe you need it too.",
+    appStore: "App Store",
     showcase: "Show Me",
     links: [
       {
-        label: "Blog",
-        link: "#",
+        label: "Features",
+        link: "#features",
       },
       {
         label: "About",
-        link: "#",
+        link: "#about",
       },
     ],
   },
   featuresSection: {
-    title: "It's simple, but maybe enough?",
+    title: "Simple, and flexible.",
     summary:
-      "Some apps want that all the functions has been contained in it. But it's too much to brain for some people like me. We want an accounting app to keep simple, but flexible and powerful. Therefore there is Kosto.",
+      "What would we expect in an accounting app? Accounts, categories, records, that's all. Pair that with out-of-box charts, local data storage, and optional cloud syncing, and it's even more perfect. — Nobody",
+    appStore: "App Store",
     features: [
       {
-        icon: <RectangleGroupIcon className="h-6 w-6" />,
-        label: "Categories",
-        summary: "Categorize records",
+        icon: <TagIcon className="h-6 w-6" />,
+        label: "Simple",
+        summary: "Accounts, Categories, Records, That's all.",
       },
       {
-        icon: <RectangleGroupIcon className="h-6 w-6" />,
-        label: "Categories",
-        summary: "Categorize records",
+        icon: <SwatchIcon className="h-6 w-6" />,
+        label: "Flexible",
+        summary:
+          "Record cost, Manage subscriptions, Analyze budget, And more possibilities.",
       },
       {
-        icon: <RectangleGroupIcon className="h-6 w-6" />,
-        label: "Categories",
-        summary: "Categorize records",
+        icon: <NewspaperIcon className="h-6 w-6" />,
+        label: "Visualization",
+        summary: "Pie, Bar, Tree, And more charts to analyze your records.",
       },
       {
-        icon: <RectangleGroupIcon className="h-6 w-6" />,
-        label: "Categories",
-        summary: "Categorize records",
+        icon: <LockClosedIcon className="h-6 w-6" />,
+        label: "Secure",
+        summary:
+          "Completely local, iCloud Sync, Authentication ... Your data are yours.",
       },
     ],
   },
@@ -76,6 +86,20 @@ export const en = {
       },
     ],
   },
+  about: {
+    title: "About",
+    subtitle: "Craft Simple, Flexible, Powerful apps.",
+    appName: "Kosto",
+    appURL: "https://kosto.nooc.ink",
+    summary:
+      "A simple and flexible accounting app on iOS. There is simple and clear user interface, and a lot of powerful out-of-box charts. The data are stored completely locally, but with optional iCloud sync.",
+  },
+  cta: {
+    title: "Want to have a try?",
+    subtitle: "Get it on App Store now.",
+    appStore: "App Store",
+    learnMore: "Learn More",
+  },
   footer: {
     bio: "An idealist standing between existentialism and nihilism.",
     links: [
@@ -84,15 +108,11 @@ export const en = {
         link: "https://nooc.ink",
       },
       {
-        label: "Blog",
-        link: "#",
+        label: "About",
+        link: "#about",
       },
       {
         label: "Privacy",
-        link: "#",
-      },
-      {
-        label: "About",
         link: "#",
       },
     ],

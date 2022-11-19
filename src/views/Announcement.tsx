@@ -1,6 +1,4 @@
 import React, { FC, useState } from "react";
-import { Apple } from "@icons-pack/react-simple-icons";
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { useI18N } from "../i18n";
 
 const CURRENT_ANNOUNCEMENT_VERSION = 1;

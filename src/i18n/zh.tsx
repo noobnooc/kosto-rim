@@ -1,4 +1,10 @@
-import { ArrowRightIcon, RectangleGroupIcon } from "@heroicons/react/24/solid";
+import {
+  ArrowRightIcon,
+  LockClosedIcon,
+  NewspaperIcon,
+  SwatchIcon,
+  TagIcon,
+} from "@heroicons/react/24/solid";
 import { Apple } from "@icons-pack/react-simple-icons";
 import React from "react";
 
@@ -17,49 +23,47 @@ export const zh = {
     </>
   ),
   banner: {
-    title: (
-      <>
-        另一个记账 App<br></br>仅此而已
-      </>
-    ),
+    title: <>又又又一款记账应用</>,
     summary:
-      "虽然市面上已经有数不胜数的记账应用，但再试试我们又何妨？我们尝试使用简单的功能，灵活地覆盖更多使用场景。",
+      "我们的目的不是要制作一款功能完备界面复杂的记账应用，而是想要设计一款简单易用的记账应用，没准儿你会需要它。",
+    appStore: "立即下载",
     showcase: "看看",
     links: [
       {
-        label: "博客",
-        link: "#",
+        label: "功能",
+        link: "#features",
       },
       {
         label: "关于",
-        link: "#",
+        link: "#about",
       },
     ],
   },
   featuresSection: {
-    title: "简单, 但也许够用了？",
+    title: "简单且灵活",
     summary:
-      "很多应用着力于实现越来越多的功能以覆盖更多使用场景。但过于复杂繁多的功能会使一些像我一样的人陷入迷茫。我想要一款功能简单但又灵活的记账应用，于是就有了 Kosto。",
+      "我们需要一款怎样的记账应用？账户、分类、记录，有这些就够。再搭配开箱即用的图表、数据本地存储和可选的云同步，那就完美了。   —— 不知名人士",
+    appStore: "立即下载",
     features: [
       {
-        icon: <RectangleGroupIcon className="h-6 w-6" />,
-        label: "类别",
-        summary: "记录按自定义类别分类",
+        icon: <TagIcon className="h-6 w-6" />,
+        label: "简单",
+        summary: "账户、类别、记录，就这么多。",
       },
       {
-        icon: <RectangleGroupIcon className="h-6 w-6" />,
-        label: "类别",
-        summary: "记录按自定义类别分类",
+        icon: <SwatchIcon className="h-6 w-6" />,
+        label: "灵活",
+        summary: "支出记录、订阅管理、预算分析...或者探索更多玩法。",
       },
       {
-        icon: <RectangleGroupIcon className="h-6 w-6" />,
-        label: "类别",
-        summary: "记录按自定义类别分类",
+        icon: <NewspaperIcon className="h-6 w-6" />,
+        label: "可视化",
+        summary: "饼图、条状图、树...各种可视化图形分析。",
       },
       {
-        icon: <RectangleGroupIcon className="h-6 w-6" />,
-        label: "类别",
-        summary: "记录按自定义类别分类",
+        icon: <LockClosedIcon className="h-6 w-6" />,
+        label: "安全",
+        summary: "完全本地、iCloud同步、身份认证...数据由你掌控。",
       },
     ],
   },
@@ -80,6 +84,24 @@ export const zh = {
       },
     ],
   },
+  about: {
+    title: "关于",
+    subtitle: "设计简单、灵活且又强大的应用。",
+    appName: (
+      <>
+        知出<span className="ml-1 opacity-50">(Kosto)</span>
+      </>
+    ),
+    appURL: "https://kosto.nooc.ink",
+    summary:
+      "知出（Kosto）是 iOS 上一款简单且灵活的记账应用。它有简单清晰的用户界面，以及大量开箱即用的图表。其数据均保存在本地，且可以选择开启 iCloud 同步功能。",
+  },
+  cta: {
+    title: "想要试试吗?",
+    subtitle: "立即从 App Store 下载",
+    appStore: "立即下载",
+    learnMore: "了解更多",
+  },
   footer: {
     bio: "站在存在主义与虚无主义中间的理想主义者。",
     links: [
@@ -88,15 +110,11 @@ export const zh = {
         link: "https://nooc.ink",
       },
       {
-        label: "博客",
-        link: "#",
+        label: "关于",
+        link: "#about",
       },
       {
         label: "隐私政策",
-        link: "#",
-      },
-      {
-        label: "关于",
         link: "#",
       },
     ],

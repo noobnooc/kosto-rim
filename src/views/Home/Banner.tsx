@@ -9,7 +9,7 @@ export default function Banner() {
   const i18n = useI18N();
 
   return (
-    <div className="isolate bg-white dark:bg-indigo-900">
+    <div className="isolate dark:bg-indigo-900/10">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
@@ -68,8 +68,8 @@ export default function Banner() {
           <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
             <div>
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                  <span className="text-gray-600">
+                <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 transition-colors hover:ring-gray-900/20 dark:ring-gray-400/20 dark:hover:ring-gray-400/40">
+                  <span className="text-gray-600 dark:text-gray-400">
                     {i18n.content?.announcement}
                   </span>
                 </div>
@@ -78,20 +78,20 @@ export default function Banner() {
                 <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
                   {i18n.content?.banner.title}
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
+                <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-500 sm:text-center">
                   {i18n.content?.banner.summary}
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
                   <a
                     href="#"
-                    className="inline-flex items-center rounded-lg bg-indigo-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-500 transition-colors hover:bg-indigo-400 hover:ring-indigo-400"
+                    className="inline-flex items-center rounded-lg bg-indigo-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-500 transition-colors hover:bg-indigo-600 hover:ring-indigo-600"
                   >
                     <Apple className="mx-1 -translate-y-0.5" size={20} />
-                    App Store
+                    {i18n.content?.banner.appStore}
                   </a>
                   <a
                     href="#features"
-                    className="inline-flex items-center rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+                    className="inline-flex items-center rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:text-gray-100 dark:ring-gray-100/20 dark:hover:ring-gray-100/50"
                   >
                     {i18n.content?.banner.showcase}
                     <ArrowRightIcon

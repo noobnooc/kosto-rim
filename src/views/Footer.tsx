@@ -1,3 +1,4 @@
+import { EnvelopeIcon, HeartIcon } from "@heroicons/react/24/solid";
 import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
 import React, { FC } from "react";
 import { useI18N } from "../i18n";
@@ -6,11 +7,14 @@ export const Footer: FC = () => {
   const i18n = useI18N();
 
   return (
-    <footer aria-label="Site Footer" className="">
+    <footer
+      aria-label="Site Footer"
+      className="pb-16 dark:bg-indigo-900/10 sm:py-16"
+    >
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex justify-center text-teal-600">
           <svg
-            className="opacity-50"
+            className="text-gray-700 dark:text-gray-400"
             width="35px"
             viewBox="0 0 291 249"
             version="1.1"
@@ -26,7 +30,7 @@ export const Footer: FC = () => {
               <g
                 id="Avatar-Template"
                 transform="translate(-54.000000, -54.000000)"
-                className="fill-indigo-700"
+                fill="currentColor"
               >
                 <path
                   d="M199.5,54 C279.857431,54 345,119.142569 345,199.5 C345,239.745848 328.65989,276.17526 302.25197,302.515935 L199,199.264935 L96.249446,302.016217 C70.1345949,275.715474 54,239.491955 54,199.5 C54,119.142569 119.142569,54 199.5,54 Z"
@@ -47,7 +51,7 @@ export const Footer: FC = () => {
               return (
                 <li key={link.label}>
                   <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
+                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-gray-400"
                     href={link.link}
                   >
                     {link.label}
@@ -64,7 +68,7 @@ export const Footer: FC = () => {
               href="https://www.instagram.com/noobnooc/"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:text-gray-700/75"
+              className="text-gray-700 transition hover:text-gray-700/75 dark:text-gray-400"
             >
               <span className="sr-only">Instagram</span>
               <Instagram className="h-6 w-6" aria-hidden />
@@ -76,7 +80,7 @@ export const Footer: FC = () => {
               href="https://twitter.com/noobnooc"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:text-gray-700/75"
+              className="text-gray-700 transition hover:text-gray-700/75 dark:text-gray-400"
             >
               <span className="sr-only">Twitter</span>
               <Twitter className="h-6 w-6" aria-hidden />
@@ -88,14 +92,40 @@ export const Footer: FC = () => {
               href="https://github.com/noobnooc/kosto-rim"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:text-gray-700/75"
+              className="text-gray-700 transition hover:text-gray-700/75 dark:text-gray-400"
             >
               <span className="sr-only">GitHub</span>
               <Github className="h-6 w-6" aria-hidden />
             </a>
           </li>
+
+          <li>
+            <a
+              href="mailto:nooc@nooc.ink"
+              rel="noreferrer"
+              target="_blank"
+              className="text-gray-700 transition hover:text-gray-700/75 dark:text-gray-400"
+            >
+              <span className="sr-only">Email</span>
+              <EnvelopeIcon className="h-6 w-6" aria-hidden />
+            </a>
+          </li>
         </ul>
       </div>
+
+      <p className="flex items-center justify-center text-sm text-gray-500">
+        Crafted by
+        <a
+          className="mx-1 underline"
+          href="https://nooc.ink"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Nooc
+        </a>
+        with <HeartIcon className="ml-1 h-5 w-5" />
+      </p>
+      <p className="text-center text-sm text-gray-500">© 2022</p>
     </footer>
   );
 };
