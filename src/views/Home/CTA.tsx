@@ -17,7 +17,7 @@ export default function CTA() {
         <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
           <div className="inline-flex rounded-xl shadow-lg shadow-indigo-100 dark:shadow-none">
             <a
-              href="#"
+              href={i18n.content?.appStoreURL}
               className="inline-flex items-center justify-center rounded-xl border border-transparent bg-indigo-500 px-5 py-3 text-base font-medium text-white transition-colors hover:bg-indigo-600"
             >
               <Apple className="mx-1 -translate-y-0.5" size={20} />

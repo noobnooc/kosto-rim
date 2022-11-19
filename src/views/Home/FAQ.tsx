@@ -17,11 +17,7 @@ export const FAQ: FC = () => {
         <div className="divide-y divide-gray-200 rounded-xl border border-gray-200 bg-white dark:divide-neutral-700 dark:border-neutral-700 dark:bg-neutral-900/30">
           {i18n.content?.faq.questions.map((question, index) => {
             return (
-              <details
-                key={question.q}
-                className="group p-6"
-                open={index === 0}
-              >
+              <details key={question.q} className="group p-6" open>
                 <summary className="flex cursor-pointer items-center justify-between">
                   <h2 className="text-lg font-medium">{question.q}</h2>
 

@@ -126,6 +126,12 @@ export const Footer: FC = () => {
         with <HeartIcon className="ml-1 h-5 w-5" />
       </p>
       <p className="text-center text-sm text-gray-500">© 2022</p>
+      <p className="mt-4 text-center text-sm text-gray-500">
+        <p className="my-1 uppercase opacity-60">Acknowledgement</p>
+        Powered by TypeScript / React / TailwindCSS / ViteJS and more
+        <br />
+        Hosted in GitHub Pages
+      </p>
     </footer>
   );
 };

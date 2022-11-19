@@ -1,6 +1,7 @@
 import React from "react";
 import { useI18N } from "../../i18n";
 import appIconURL from "../../assets/app-icon.png";
+import { ReactComponent as TwitterVerified } from "../../assets/twitter-verified.svg";
 
 export default function About() {
   const i18n = useI18N();
@@ -24,7 +25,10 @@ export default function About() {
             alt="App Icon"
             aria-hidden
           />
-          <p className="mt-5 text-2xl">{i18n.content?.about.appName}</p>
+          <p className="relative mt-5 text-2xl">
+            {i18n.content?.about.appName}
+            <TwitterVerified className="absolute top-0 bottom-0 -right-8 my-auto h-6 w-6" />
+          </p>
           <a
             className="block text-gray-700 dark:text-gray-400"
             href={i18n.content?.about.appURL}

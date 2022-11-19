@@ -4,6 +4,7 @@ import appIconURL from "../../assets/app-icon.png";
 import { Apple } from "@icons-pack/react-simple-icons";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { useI18N } from "../../i18n";
+import { ReactComponent as TwitterVerified } from "../../assets/twitter-verified.svg";
 
 export default function Banner() {
   const i18n = useI18N();
@@ -44,9 +45,15 @@ export default function Banner() {
             aria-label="Global"
           >
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Kosto</span>
+              <a
+                href="#"
+                className="relative -m-1.5 inline-flex items-center p-1.5"
+              >
                 <img className="h-12 w-12 rounded-lg" src={appIconURL} />
+                <span className="ml-2 text-xl font-bold">
+                  {i18n.content?.appName}
+                </span>
+                <TwitterVerified className="absolute top-0 bottom-0 -right-6 my-auto h-6 w-6" />
               </a>
             </div>
             <div className="flex min-w-0 flex-1 justify-end gap-x-5 sm:gap-x-12 lg:justify-center">
@@ -83,7 +90,7 @@ export default function Banner() {
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
                   <a
-                    href="#"
+                    href={i18n.content?.appStoreURL}
                     className="inline-flex items-center rounded-lg bg-indigo-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-500 transition-colors hover:bg-indigo-600 hover:ring-indigo-600"
                   >
                     <Apple className="mx-1 -translate-y-0.5" size={20} />
