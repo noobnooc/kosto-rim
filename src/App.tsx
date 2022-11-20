@@ -7,7 +7,7 @@ import { Home } from "./views/Home";
 export const App: FC = () => {
   return (
     <I18NProvider>
-      <div className="transition-colors dark:bg-black dark:text-white">
+      <div className="bg-white text-black transition-colors dark:bg-black dark:text-white">
         <Home />
 
         <Footer />

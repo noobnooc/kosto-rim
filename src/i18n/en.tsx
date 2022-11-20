@@ -150,8 +150,8 @@ export const en = {
     ],
   },
   visualizationSection: {
-    title: "Chart theme",
-    summary: "Chart theme",
+    title: "Chart them",
+    summary: "Chart them",
     items: [
       {
         icon: <ChartPieIcon className="h-6 w-6 text-red-500" />,
