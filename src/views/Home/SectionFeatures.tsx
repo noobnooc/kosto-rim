@@ -6,7 +6,10 @@ export const SectionFeatures: FC = () => {
   const i18n = useI18N();
 
   return (
-    <section id="features" className="dark:bg-indigo-900/10">
+    <section
+      id="features"
+      className="isolate bg-gradient-to-b from-indigo-50/0 to-indigo-50 dark:from-indigo-900/10 dark:to-indigo-400/10"
+    >
       <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="mx-auto max-w-lg text-center lg:mx-0 lg:text-left">
@@ -31,7 +34,7 @@ export const SectionFeatures: FC = () => {
               return (
                 <a
                   key={feature.label}
-                  className="block rounded-xl border border-gray-100 p-4 shadow-lg shadow-gray-100 transition-all hover:scale-105 hover:border-gray-200 hover:shadow-gray-200 focus:outline-none focus:ring dark:border-gray-500 dark:shadow-none dark:hover:border-gray-300"
+                  className="block rounded-xl border border-gray-100 bg-white p-4 shadow-lg shadow-gray-400/10 transition-all hover:scale-105 hover:border-gray-200 hover:shadow-gray-400/20 focus:outline-none focus:ring dark:border-gray-500 dark:bg-black/20 dark:shadow-none dark:hover:border-gray-300"
                   href={feature.link}
                 >
                   <div className="flex items-center sm:block">

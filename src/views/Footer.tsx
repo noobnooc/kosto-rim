@@ -2,9 +2,11 @@ import { EnvelopeIcon, HeartIcon } from "@heroicons/react/24/solid";
 import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
 import React, { FC } from "react";
 import { useI18N } from "../i18n";
+import useToggleColorScheme from "../theme/theme";
 
 export const Footer: FC = () => {
   const i18n = useI18N();
+  const toggleColorScheme = useToggleColorScheme();
 
   return (
     <footer
@@ -14,7 +16,10 @@ export const Footer: FC = () => {
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex justify-center text-teal-600">
           <svg
-            className="text-gray-700 dark:text-gray-400"
+            className="cursor-pointer  text-gray-700 dark:text-gray-400"
+            onClick={() => {
+              toggleColorScheme();
+            }}
             width="35px"
             viewBox="0 0 291 249"
             version="1.1"
@@ -126,12 +131,12 @@ export const Footer: FC = () => {
         with <HeartIcon className="ml-1 h-5 w-5" />
       </p>
       <p className="text-center text-sm text-gray-500">© 2022</p>
-      <p className="mt-4 text-center text-sm text-gray-500">
+      <div className="mt-4 text-center text-sm text-gray-500">
         <p className="my-1 uppercase opacity-60">Acknowledgement</p>
-        Powered by TypeScript / React / TailwindCSS / ViteJS and more
+        Powered by TypeScript / React / TailwindCSS and more
         <br />
-        Hosted in GitHub Pages
-      </p>
+        Hosted on GitHub Pages
+      </div>
     </footer>
   );
 };

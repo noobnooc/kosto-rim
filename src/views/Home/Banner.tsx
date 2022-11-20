@@ -11,7 +11,7 @@ export default function Banner() {
 
   return (
     <div className="isolate dark:bg-indigo-900/10">
-      <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+      <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu blur-3xl sm:top-[-20rem]">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
           viewBox="0 0 1155 678"
@@ -49,11 +49,14 @@ export default function Banner() {
                 href="#"
                 className="relative -m-1.5 inline-flex items-center p-1.5"
               >
-                <img className="h-12 w-12 rounded-lg" src={appIconURL} />
-                <span className="ml-2 text-xl font-bold">
+                <img
+                  className="h-8 w-8 rounded-lg sm:h-12 sm:w-12"
+                  src={appIconURL}
+                />
+                <span className="ml-2 text-lg font-bold sm:ml-4 sm:text-xl">
                   {i18n.content?.appName}
                 </span>
-                <TwitterVerified className="absolute top-0 bottom-0 -right-6 my-auto h-6 w-6" />
+                <TwitterVerified className="absolute top-0 bottom-0 -right-5 my-auto h-5 w-5 sm:-right-6 sm:h-6 sm:w-6" />
               </a>
             </div>
             <div className="flex min-w-0 flex-1 justify-end gap-x-5 sm:gap-x-12 lg:justify-center">
@@ -108,7 +111,7 @@ export default function Banner() {
                   </a>
                 </div>
               </div>
-              <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+              <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-x-hidden blur-3xl dark:hidden sm:top-[calc(100%-30rem)]">
                 <svg
                   className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
                   viewBox="0 0 1155 678"

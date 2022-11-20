@@ -44,12 +44,21 @@ const I18NContext = createContext<{
 });
 
 export function I18NProvider({ children }: { children: ReactNode }) {
+  let lang = new URLSearchParams(location.search).get("lang");
+
+  console.log("###", lang);
+
+  if (!lang || !SUPPORT_LANGUAGES.includes(lang as SupportedLanguage)) {
+    lang =
+      navigator.languages
+        .map((lang) => lang.split("-")[0])
+        .find((lang): lang is SupportedLanguage =>
+          SUPPORT_LANGUAGES.includes(lang as SupportedLanguage)
+        ) ?? SUPPORT_LANGUAGES[0];
+  }
+
   const [language, setLanguage] = useState<SupportedLanguage>(
-    navigator.languages
-      .map((lang) => lang.split("-")[0])
-      .find((lang): lang is SupportedLanguage =>
-        SUPPORT_LANGUAGES.includes(lang as SupportedLanguage)
-      ) ?? SUPPORT_LANGUAGES[0]
+    lang as SupportedLanguage
   );
 
   return (

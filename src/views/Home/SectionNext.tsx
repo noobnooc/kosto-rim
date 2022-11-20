@@ -1,4 +1,3 @@
-import { Apple } from "@icons-pack/react-simple-icons";
 import React, { FC } from "react";
 import { useI18N } from "../../i18n";
 

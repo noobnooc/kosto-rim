@@ -1,12 +1,26 @@
 import {
+  ArrowPathRoundedSquareIcon,
+  ArrowTrendingDownIcon,
+  Bars3BottomRightIcon,
+  ChartBarIcon,
+  ChartPieIcon,
+  CloudIcon,
+  Cog6ToothIcon,
   ComputerDesktopIcon,
   CurrencyEuroIcon,
+  CursorArrowRaysIcon,
+  DevicePhoneMobileIcon,
+  DocumentTextIcon,
+  FingerPrintIcon,
+  FolderOpenIcon,
+  FunnelIcon,
   HandRaisedIcon,
+  HeartIcon,
   LockClosedIcon,
-  NewspaperIcon,
+  SquaresPlusIcon,
   SwatchIcon,
   TagIcon,
-  TruckIcon,
+  WrenchScrewdriverIcon,
 } from "@heroicons/react/24/solid";
 import React from "react";
 
@@ -15,7 +29,10 @@ export const en = {
   appStoreURL: undefined,
   announcement: (
     <>
-      <span className="">Coming soon to App Store!</span>
+      <span className="">
+        Coming soon to App Store!
+        <span className="mx-1 opacity-50">(Folder created)</span>
+      </span>
     </>
   ),
   banner: {
@@ -61,7 +78,7 @@ export const en = {
           "Record cost, Manage subscriptions, Analyze budget, And more possibilities.",
       },
       {
-        icon: <NewspaperIcon className="h-6 w-6 text-red-500" />,
+        icon: <ChartPieIcon className="h-6 w-6 text-red-500" />,
         label: "Visualization",
         link: "#visualization",
         summary: "Pie, Bar, Tree, And more charts to analyze your records.",
@@ -77,19 +94,115 @@ export const en = {
   },
   simpleSection: {
     title: "Less is more",
-    summary: "Less is more",
+    summary:
+      "If you are like us and often feel overwhelmed by the dazzling buttons after opening an app, you can give Kosto a try.",
+    items: [
+      {
+        icon: <FolderOpenIcon className="h-6 w-6 text-yellow-500" />,
+        label: "Accounts",
+        summary: "Collect all related records to an account.",
+      },
+      {
+        icon: <SquaresPlusIcon className="h-6 w-6 text-yellow-500" />,
+        label: "Categories",
+        summary:
+          "Use categories to distinguish different records for easy analysis。",
+      },
+      {
+        icon: <DocumentTextIcon className="h-6 w-6 text-yellow-500" />,
+        label: "Records",
+        summary: "Records...just records.",
+      },
+      {
+        icon: <Cog6ToothIcon className="h-6 w-6 text-yellow-500" />,
+        label: "More Tools",
+        summary:
+          "Of course it's not all, but other tools don't need to care too much, just use theme.",
+      },
+    ],
   },
   flexibleSection: {
     title: "Do more things with less tools",
     summary: "Do more things with less tools",
+    items: [
+      {
+        icon: <DocumentTextIcon className="h-6 w-6 text-blue-500" />,
+        label: "Record Costs",
+        summary: "Records all your costs, and analyze theme.",
+      },
+      {
+        icon: <ArrowPathRoundedSquareIcon className="h-6 w-6 text-blue-500" />,
+        label: "Manage Subscriptions",
+        summary:
+          "Add continuous records to reveal subscriptions cost per month.",
+      },
+      {
+        icon: <ArrowTrendingDownIcon className="h-6 w-6 text-blue-500" />,
+        label: "Analyze Budget",
+        summary:
+          "Add budget records, and analyze theme through a lot of charts.",
+      },
+      {
+        icon: <CursorArrowRaysIcon className="h-6 w-6 text-blue-500" />,
+        label: "Explore More",
+        summary: "Maybe you can explore more scenes.",
+      },
+    ],
   },
   visualizationSection: {
     title: "Chart theme",
     summary: "Chart theme",
+    items: [
+      {
+        icon: <ChartPieIcon className="h-6 w-6 text-red-500" />,
+        label: "Pie Charts",
+        summary:
+          "Pie charts about different categories costs, and more others.",
+      },
+      {
+        icon: <ChartBarIcon className="h-6 w-6 text-red-500" />,
+        label: "Bar Charts",
+        summary: "Bar charts for costs per month, and more others.",
+      },
+      {
+        icon: <Bars3BottomRightIcon className="h-6 w-6 text-red-500" />,
+        label: "Tree Charts",
+        summary:
+          "Tree charts for categories and subcategories costs, and more others.",
+      },
+      {
+        icon: <FunnelIcon className="h-6 w-6 text-red-500" />,
+        label: "More Charts",
+        summary: "There are a lot of other charts, go to check out.",
+      },
+    ],
   },
   secureSection: {
     title: "Your data is yours",
     summary: "Your data is yours",
+    items: [
+      {
+        icon: <DevicePhoneMobileIcon className="h-6 w-6 text-green-500" />,
+        label: "Stored Locally",
+        summary:
+          "All the data are stored locally, we don't even have a server.",
+      },
+      {
+        icon: <CloudIcon className="h-6 w-6 text-green-500" />,
+        label: "iCloud Sync",
+        summary: "Optional iCloud Sync, handled by Apple.",
+      },
+      {
+        icon: <FingerPrintIcon className="h-6 w-6 text-green-500" />,
+        label: "Authentication",
+        summary: "Keep your data safe with TouchID or FaceID.",
+      },
+      {
+        icon: <WrenchScrewdriverIcon className="h-6 w-6 text-green-500" />,
+        label: "More",
+        summary: "Data encryption, snapshot backup and more.",
+      },
+    ],
   },
   nextSection: {
     title: "What's Next",
@@ -106,7 +219,7 @@ export const en = {
         summary: "Native support for macOS.",
       },
       {
-        icon: <CurrencyEuroIcon className="h-6 w-6 text-emerald-500" />,
+        icon: <CurrencyEuroIcon className="h-6 w-6 text-cyan-500" />,
         label: "Currency converting?",
         summary: (
           <>
@@ -116,7 +229,7 @@ export const en = {
         ),
       },
       {
-        icon: <TruckIcon className="h-6 w-6 text-cyan-500" />,
+        icon: <HeartIcon className="h-6 w-6 text-rose-500" />,
         label: "More",
         summary: "And more functions that you can touch us.",
       },
@@ -154,7 +267,7 @@ export const en = {
     learnMore: "Learn More",
   },
   footer: {
-    bio: "An idealist standing between existentialism and nihilism.",
+    bio: "An idealist between existentialism and nihilism.",
     links: [
       {
         label: "Author",
@@ -165,8 +278,8 @@ export const en = {
         link: "#about",
       },
       {
-        label: "Privacy",
-        link: "#",
+        label: "中文",
+        link: "?lang=zh",
       },
     ],
   },
